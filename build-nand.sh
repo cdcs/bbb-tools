@@ -5,14 +5,13 @@ NAME=$1
 NANDNAME=$2
 NANDSIZE=0xe80000
 
-XLOADER=~/archive/x-load.bin.ift
-#UBOOT=~/workspace/u-boot/u-boot.bin
-UBOOT=~/archive/u-boot.bin
+XLOADER=./archive/x-load_revc_v3.bin.ift
+UBOOT=./archive/u-boot-f_revc_v3.bin
 
-OBJCOPY=arm-rtemseabi4.11-objcopy
-MKIMAGE=~/workspace/u-boot/tools/mkimage
-NANDFLASH=~/buildspace/qemu/arm-softmmu/bb_nandflash.sh
-NANDFLASH_ECC=~/buildspace/qemu/arm-softmmu/bb_nandflash_ecc
+OBJCOPY=arm-rtems4.11-objcopy
+MKIMAGE=mkimage
+NANDFLASH=./bb_nandflash.sh
+NANDFLASH_ECC=./bb_nandflash_ecc
 
 ADDRESS=0x80000000
 ENTRY=0x80000000
